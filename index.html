@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Membuat Web Eccomerce 3D</title>
+
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Link Fonts Google -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet">
+
+    <!-- Link AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  </head>
+  <body>
+
+    <div class="container" id="container">
+      <nav>
+        <h3 class="logo">Ghip.</h3>
+
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+
+        <button>Log In</button>
+      </nav>
+
+
+      <div class="welcome">
+        <h2 data-aos="fade-down">WELCOME TO MY WEB SHOES</h2>
+      </div>
+  
+
+      <div class="cta" id="cta">
+        <model-viewer src="assets/scene.gltf" camera-controls
+          camera-orbit="45deg 50deg" disable-zoom auto-rotate
+          shadow-intensity="1"></model-viewer>
+      </div>
+
+      <!-- New Box -->
+      <div class="newBox" id="newBox">
+        <div class="productBox" id="productBox1">
+          <img src="assets/nike1.png" alt="">
+          <div class="test-desc-box">
+            <div class="titleBox">Nike Vortex</div>
+            <div class="descriptionBox">
+              <p>Materials: <br/>
+              1. Shoes tip: round <br/>
+              2. Heel type: flat <br />
+              3. Fastening: laces <br />
+              4. Shoe fastener: suede <br />
+              5. Pattern: plain <br />
+              6. Details: cut-outs</p>
+            </div>
+            <div class="back-buy">
+              <button onclick="callBack()">Back</button>
+              <button>Buy</button>
+            </div>
+          </div>
+        </div>
+        <div class="productBox" id="productBox2">
+          <img src="assets/nike2.png" alt="">
+          <div class="test-desc-box">
+            <div class="titleBox">Nike 
+              air Force
+            </div>
+            <div class="descriptionBox">
+              <p>Materials: <br/>
+              1. Shoes tip: round <br/>
+              2. Heel type: flat <br />
+              3. Fastening: laces <br />
+              4. Shoe fastener: suede <br />
+              5. Pattern: plain <br />
+              6. Details: cut-outs</p>
+            </div>
+            <div class="back-buy">
+              <button onclick="callBack()">Back</button>
+              <button>Buy</button>
+            </div>
+          </div>
+        </div>
+        <div class="productBox" id="productBox3">
+          <img src="assets/nike3.png" alt="">
+          <div class="test-desc-box">
+            <div class="titleBox">Nike Vortex</div>
+            <div class="descriptionBox">
+              <p>Materials: <br/>
+              1. Shoes tip: round <br/>
+              2. Heel type: flat <br />
+              3. Fastening: laces <br />
+              4. Shoe fastener: suede <br />
+              5. Pattern: plain <br />
+              6. Details: cut-outs</p>
+            </div>
+            <div class="back-buy">
+              <button onclick="callBack()">Back</button>
+              <button>Buy</button>
+            </div>
+          </div>
+        </div>
+        <div class="productBox" id="productBox4">
+          <img src="assets/nike4.png" alt="">
+          <div class="test-desc-box">
+            <div class="titleBox">Nike Vortex</div>
+            <div class="descriptionBox">
+              <p>Materials: <br/>
+              1. Shoes tip: round <br/>
+              2. Heel type: flat <br />
+              3. Fastening: laces <br />
+              4. Shoe fastener: suede <br />
+              5. Pattern: plain <br />
+              6. Details: cut-outs</p>
+            </div>
+            <div class="back-buy">
+              <button onclick="callBack()">Back</button>
+              <button>Buy</button>
+            </div>
+          </div>
+        </div>
+        <div class="productBox" id="productBox5">
+          <img src="assets/nike5.png" alt="">
+          <div class="test-desc-box">
+            <div class="titleBox">Nike Vortex</div>
+            <div class="descriptionBox">
+              <p>Materials: <br/>
+              1. Shoes tip: round <br/>
+              2. Heel type: flat <br />
+              3. Fastening: laces <br />
+              4. Shoe fastener: suede <br />
+              5. Pattern: plain <br />
+              6. Details: cut-outs</p>
+            </div>
+            <div class="back-buy">
+              <button onclick="callBack()">Back</button>
+              <button>Buy</button>
+            </div>
+          </div>
+        </div>
+        <div class="productBox" id="productBox6">
+          <img src="assets/nike6.png" alt="">
+          <div class="test-desc-box">
+            <div class="titleBox">Nike Vortex</div>
+            <div class="descriptionBox">
+              <p>Materials: <br/>
+              1. Shoes tip: round <br/>
+              2. Heel type: flat <br />
+              3. Fastening: laces <br />
+              4. Shoe fastener: suede <br />
+              5. Pattern: plain <br />
+              6. Details: cut-outs</p>
+            </div>
+            <div class="back-buy">
+              <button onclick="callBack()">Back</button>
+              <button>Buy</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="wrapper" id="wrapper">
+        <div class="card">
+          <div class="product" id="product1" onclick="getDetail(1)">
+            <img src="assets/nike1.png" alt="card Nike 1">
+          </div>
+          <div class="detail">
+            <div class="title">Nike Vortex</div>
+            <div class="description">Cutting edge technology and futuristic
+              design</div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="product" id="product2" onclick="getDetail(2)">
+            <img src="assets/nike2.png" alt="card Nike 1">
+          </div>
+          <div class="detail">
+            <div class="title">Nike Air Force</div>
+            <div class="description">Limitless performance and speed</div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="product" id="product3" onclick="getDetail(3)">
+            <img src="assets/nike3.png" alt="card Nike 1">
+          </div>
+          <div class="detail">
+            <div class="title">Nike Dunk</div>
+            <div class="description">Elegance on the court and in everyday life</div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="product" id="product4" onclick="getDetail(4)">
+            <img src="assets/nike4.png" alt="card Nike 1">
+          </div>
+          <div class="detail">
+            <div class="title">Nike Blazer</div>
+            <div class="description">Flexibility and style for light activities</div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="product" id="product5" onclick="getDetail(5)">
+            <img src="assets/nike5.png" alt="card Nike 1">
+          </div>
+          <div class="detail">
+            <div class="title">Nike Reedom</div>
+            <div class="description">Urban adventures with extra comfort</div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="product" id="product6" onclick="getDetail(6)">
+            <img src="assets/nike6.png" alt="card Nike 1">
+          </div>
+          <div class="detail">
+            <div class="title">Nike Huarache</div>
+            <div class="description">Innovation and performance for modern
+              athletes</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="top-item" id="footer">
+      <div class="top-item-wrapper">
+        <div class="top-item-row">
+          <img src="assets/nike1.png" alt="card Nike 1" data-aos="fade-right">
+          <div class="top-item-detail" data-aos="fade-left">
+            <h3>Nike Vortex</h3>
+            <p>Best shoes ever that was used by Virgil and M.Salah</p>
+          </div> 
+        </div>
+      </div>
+    </div>
+
+    <!-- <h1 id="intro">TESTING</h1>
+    <button onclick="callButton()">Heyho</button> -->
+    <script type="module"
+      src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.1.1/model-viewer.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+
+    <script src="tweak.js"></script>
+  </body>
+</html>

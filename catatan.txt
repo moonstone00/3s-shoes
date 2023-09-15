@@ -1,0 +1,2 @@
+menit tentang perpindahan page = 4:11:10
+cek ping internet = ping 8.8.8.8 -t
