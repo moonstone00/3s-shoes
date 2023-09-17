@@ -8,6 +8,8 @@ body {
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   text-decoration: none;
   list-style: none;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 .container {
@@ -33,7 +35,7 @@ nav .logo {
 
 nav ul {
   display: flex;
-  flex-direction: row;
+  /* flex-direction: row; */
   justify-content: center;
   align-items: center;
   gap: 2rem;
@@ -46,6 +48,12 @@ nav li a {
 
 nav li a:hover {
   color: #9CFF2E;
+}
+
+.bx {
+  font-size: 2rem;
+  color: #fff;
+  display: none;
 }
 
 nav button {

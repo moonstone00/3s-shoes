@@ -1,4 +1,14 @@
-console.log("tweak");
+// Membuat humburger menu
+let humburger_menu = document.querySelector(".bx-menu")
+let navbar = document.querySelector(".navbar")
+
+humburger_menu.addEventListener("click", function() {
+  navbar.classList.toggle("active")
+})
+
+// window.onscroll = () => {
+//   navbar.classList.remove("active")
+// }
 
 // const intro = document.getElementById('intro')
 const container = document.getElementById("container");

@@ -1,0 +1,38 @@
+@media screen and (max-width: 850px) {
+    nav button {
+        display: none;
+    }
+    nav .bx {
+        display: initial;
+        margin-top: 13px;
+    }
+    nav .navbar {
+        background-color: #000046;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        left: 0;
+        right: 0;
+        top: -400px;
+        transition: .3s;
+        z-index: 10;
+        padding-bottom: 2rem;
+    }
+    .navbar li a {
+        display: block;
+        padding: 7px 20px;
+    }
+    nav .navbar::after {
+        content: "Log In";
+        color: #fff;
+        font-size: 19px;
+        background-color: #9CFF2E;
+        padding:5px 20px;
+        border-radius: 9px;
+    }
+    nav .navbar.active {
+        top: 80px;
+    }
+}
